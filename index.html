@@ -1,0 +1,65 @@
+<html>
+
+
+<head>
+    <title>form registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+    <div class="page">
+        <div class="container">
+            <form class="user-form">
+                <div class="form-header">
+                    <h2>Registration Form</h2>
+                </div>
+                <div class="form-body">
+                    <label for="name">NAME</label>
+                    <input required type="text" name="name" id="name" />
+
+                    <label for="email">EMAIL</label>
+                    <input required type="email" name="email" id="email" />
+
+                    <label for="password">PASSWORD</label>
+                    <input required type="password" name="password" id="password" />
+
+                    <label for="dob">DATE OF BIRTH</label>
+                    <input required type="date" name="dob" id="dob" />
+                </div>
+                <div class="form-terms">
+
+                    <input type="checkbox" name="acceptTerms" id="acceptTerms" />
+                    <label for="acceptTerms">ACCEPT TERMS AND CONDITIONS</label>
+
+                </div>
+
+                <div class="form-submit">
+                    <button id="submit" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <div class="user-history">
+            <h1>Entries</h1>
+            <table id="history" class="history">
+
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>PASSWORD</th>
+                    <th>DATE OF BIRTH</th>
+                    <th>Accepted terms?</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+
+
+</html>
